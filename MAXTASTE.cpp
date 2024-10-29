@@ -2,14 +2,16 @@
 using namespace std;
 
 int main() {
-	int t;
-	cin>>t;
-	while(t--){
-	    int a,b,c,d;
-	    cin>>a>>b>>c>>d;
-	    int e=max(a,b);
-	    int f=max(c,d);
-	    cout<<e+f<<endl;
-	}
-   return 0;
+	// your code goes here
+int T;
+    cin >> T;  
+    while (T--) {
+        int a, b, c, d;
+        cin >> a >> b >> c >> d;  
+        
+        int maxTastiness = max({a + c, a + d, b + c, b + d});
+        
+        cout << maxTastiness << endl;
+    }
+    return 0;
 }
